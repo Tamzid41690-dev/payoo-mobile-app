@@ -34,7 +34,7 @@
             <img src="./assets/send1.png" alt="">
             <h2 class="text-center">Cash out</h2>
         </div>
-        <div class="border-2 border-[#f4f5f7] flex flex-col justify-center items-center gap-4 p-4 rounded-2xl">
+        <div id="transfer-option" class="border-2 border-[#f4f5f7] flex flex-col justify-center items-center gap-4 p-4 rounded-2xl">
             <img src="./assets/money1.png" alt="">
             <h2 class="text-center">Transfer Money</h2>
         </div>
@@ -98,6 +98,27 @@
         </form>
        
     </div>
+
+    <div class="w-full max-w-lg mx-auto mt-5" id="Transfer-section" >
+          <h1 class="text-2xl font-bold mt-1 p-4">Transfer Money</h1>
+        <form action="" class="bg-white rounded-2xl p-8">
+            <div class="mt-4">
+            <label for="" class="font-bold text-lg ">Enter Account Number</label><br>
+            <input type="text" placeholder="Enter Account Number" class="input input-primary mt-5 rounded-3xl w-full p-6" id="transfer-account" />
+            </div>
+            <div class="mt-4">
+                  <label for="" class="font-bold text-lg">Amount</label><br>
+            <input type="text" placeholder="Enter Amount" class="input input-primary mt-5 rounded-3xl w-full p-6" id="transfer-amount" />
+            </div>
+            <div class="mt-4">
+                  <label for="" class="font-bold text-lg">Enter PIN Number</label><br>
+            <input type="text" placeholder="Enter PIN" class="input input-primary mt-5 rounded-3xl w-full p-6" id="transfer-pin"/>
+            </div>
+            <button class="btn w-full mt-7 rounded-3xl bg-[#0874F2] p-8  text-white text-lg" id="transfer-btn" >Transfer</button>
+        </form>
+       
+    </div>
+
      <script src="./home.js"></script>
 </body>
 </html>
