@@ -38,11 +38,11 @@
             <img src="./assets/money1.png" alt="">
             <h2 class="text-center">Transfer Money</h2>
         </div>
-        <div class="border-2 border-[#f4f5f7] flex flex-col justify-center items-center gap-4 p-4 rounded-2xl">
+        <div id="bonus-option" class="border-2 border-[#f4f5f7] flex flex-col justify-center items-center gap-4 p-4 rounded-2xl">
             <img src="./assets/bonus1.png" alt="">
             <h2 class="text-center">Get Bonus</h2>
         </div>
-        <div class="border-2 border-[#f4f5f7] flex flex-col justify-center items-center gap-4 p-4 rounded-2xl">
+        <div id="pay-bill-option" class="border-2 border-[#f4f5f7] flex flex-col justify-center items-center gap-4 p-4 rounded-2xl">
             <img src="./assets/purse1.png" alt="">
             <h2 class="text-center">Pay Bill</h2>
         </div>
@@ -115,6 +115,47 @@
             <input type="text" placeholder="Enter PIN" class="input input-primary mt-5 rounded-3xl w-full p-6" id="transfer-pin"/>
             </div>
             <button class="btn w-full mt-7 rounded-3xl bg-[#0874F2] p-8  text-white text-lg" id="transfer-btn" >Transfer</button>
+        </form>
+       
+    </div>
+
+    <div class="w-full max-w-lg mx-auto mt-5" id="bonus-section">
+          <h1 class="text-2xl font-bold mt-1 p-4">Bonus Section</h1>
+        <form action="" class="bg-white rounded-2xl p-8">
+            <div class="mt-4">
+            <label for="" class="font-bold text-lg ">Enter Coupon Code</label><br>
+            <input type="text" placeholder="Enter Your Coupon Code" class="input input-primary mt-5 rounded-3xl w-full p-6" id="bonus-code" />
+            </div>
+            <button class="btn w-full mt-7 rounded-3xl bg-[#0874F2] p-8  text-white text-lg" id="bonus-btn" >Get Bonus</button>
+        </form>
+       
+    </div>
+
+    <div class="w-full max-w-lg mx-auto" id="pay-bill-section">
+        <h1 class="text-2xl font-bold mt-1 p-4">Pay Bill</h1>
+        <form action="" class="bg-white rounded-2xl p-8">
+            <div>
+                <h1 class="font-bold text-lg">Select to Pay</h1>
+                <select class="select bg-white rounded-3xl p-6 w-full mt-4 border-1 border-blue-300" id="pay-comp" >
+                    <option>BPDB</option>
+                    <option> NESCO</option>
+                    <option>DESCO</option>
+                    <option>KGDCL</option>
+                </select>
+            </div>
+            <div class="mt-4">
+            <label for="" class="font-bold text-lg ">Billing Account Number</label><br>
+            <input type="text" placeholder="Enter Billing Account Number" class="input input-primary mt-5 rounded-3xl w-full p-6" id="Billing-account" />
+            </div>
+            <div class="mt-4">
+                  <label for="" class="font-bold text-lg">Amount to Pay</label><br>
+            <input type="text" placeholder="Enter Ammount To Pay" class="input input-primary mt-5 rounded-3xl w-full p-6" id="pay-amount" />
+            </div>
+            <div class="mt-4">
+                  <label for="" class="font-bold text-lg">Enter PIN Number</label><br>
+            <input type="text" placeholder="Enter PIN" class="input input-primary mt-5 rounded-3xl w-full p-6" id="pay-pin"/>
+            </div>
+            <button class="btn w-full mt-7 rounded-3xl bg-[#0874F2] p-8  text-white text-lg" id="pay-btn" >Pay Bill</button>
         </form>
        
     </div>
